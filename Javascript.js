@@ -19,30 +19,26 @@ function playGame() {
     humanChoice = humanChoice.toLowerCase();
     computerChoice = computerChoice.toLowerCase();
 
-    if (humanChoice === "rock" && computerChoice === "rock") {
+    if (humanChoice === computerChoice) {
       return "it's a tie";
     } else if (humanChoice === "rock" && computerChoice === "paper") {
-      computerScore = computerScore + 1;
+      computerScore = computerScore++;
       return "You lost, paper beats rock";
     } else if (humanChoice === "rock" && computerChoice === "scissors") {
-      humanScore = humanScore + 1;
+      humanScore = humanScore++;
       return "You won, scissors beats rock";
-    } else if (humanChoice === "paper" && computerChoice === "paper") {
-      return "It's a tie";
     } else if (humanChoice === "paper" && computerChoice === "rock") {
-      humanScore = humanScore + 1;
+      humanScore = humanScore++;
       return "You won, paper beats rock";
     } else if (humanChoice === "paper" && computerChoice === "scissors") {
-      computerScore = computerScore + 1;
+      computerScore = computerScore++;
       return "You lost, scissors beats paper";
     } else if (humanChoice === "scissors" && computerChoice === "rock") {
-      computerScore = computerScore + 1;
+      computerScore = computerScore++;
       return "you lost, rock beaths scissors";
     } else if (humanChoice === "scissors" && computerChoice === "paper") {
-      humanScore = humanScore + 1;
+      humanScore = humanScore++;
       return "you won, scissors beats paper";
-    } else if (humanChoice === "scissors" && computerChoice === "scissors") {
-      return "it's a tie";
     } else {
       return "null";
     }
