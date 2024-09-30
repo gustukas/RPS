@@ -22,22 +22,22 @@ function playGame() {
     if (humanChoice === computerChoice) {
       return "it's a tie";
     } else if (humanChoice === "rock" && computerChoice === "paper") {
-      computerScore = computerScore++;
+      computerScore = computerScore + 1;
       return "You lost, paper beats rock";
     } else if (humanChoice === "rock" && computerChoice === "scissors") {
-      humanScore = humanScore++;
+      humanScore = humanScore + 1;
       return "You won, scissors beats rock";
     } else if (humanChoice === "paper" && computerChoice === "rock") {
-      humanScore = humanScore++;
+      humanScore = humanScore + 1;
       return "You won, paper beats rock";
     } else if (humanChoice === "paper" && computerChoice === "scissors") {
-      computerScore = computerScore++;
+      computerScore = computerScore + 1;
       return "You lost, scissors beats paper";
     } else if (humanChoice === "scissors" && computerChoice === "rock") {
-      computerScore = computerScore++;
+      computerScore = computerScore + 1;
       return "you lost, rock beaths scissors";
     } else if (humanChoice === "scissors" && computerChoice === "paper") {
-      humanScore = humanScore++;
+      humanScore = humanScore + 1;
       return "you won, scissors beats paper";
     } else {
       return "null";
@@ -62,36 +62,9 @@ function playGame() {
       console.log("The computer score is:" + computerScore);
     }
   }
-  counter();
-  counter();
-  counter();
-  counter();
-  counter();
-  counter();
-  counter();
-  counter();
-  counter();
-  counter();
-  counter();
-  counter();
-  counter();
-  counter();
-  counter();
-  counter();
-  counter();
-  counter();
-  counter();
-  counter();
-  counter();
-  counter();
-  counter();
-  counter();
-  counter();
-  counter();
-  counter();
-  counter();
-  counter();
-  counter();
+  for (let i = 1; 1 < 100; i++) {
+    counter();
+  }
 }
 
 playGame();
